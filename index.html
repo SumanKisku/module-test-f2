@@ -12,14 +12,10 @@
 <body>
     <div class="container">
         <div class="row">
-            <img id="first-image" src="https://via.placeholder.com/150 
-            " alt="">
-            <img id="second-image" src="https://via.placeholder.com/150 
-            " alt="">
-            <img id="third-image" src="https://via.placeholder.com/150 
-            " alt="">
-            <img id="fourth-image" src="https://via.placeholder.com/150 
-            " alt="">
+            <img class="img-fluid" id="first-image" src="1.png" alt="">
+            <img class="img-fluid" id="second-image" src="2.png" alt="">
+            <img class="img-fluid" id="third-image" src="3.png" alt="">
+            <img class="img-fluid" id="fourth-image" src="4.png" alt="">
         </div>
     </div>
     <div class="container" >
@@ -29,6 +25,7 @@
                 <input id="email" type="email" placeholder="Email" required>
                 <input id="username" type="text" placeholder="Username" required>
                 <button id="register" type="submit">Register</button>
+                <p class="form-message">Registered</p>
             </form>
         </div>
     </div>
@@ -38,6 +35,23 @@
            <h3 id="display-username"></h3>
         </div>
     </div>
+    <div class="container dice">
+        <div class="row" id="user-details">
+            <img id="dice" src="./dice.jpg" width="200px" height="200px" alt="">
+            <p>Generated: <span id="generated">0</span></p>
+            <p>Total: <span id="total">0</span></p>
+            <p>Turn: <span id="attempt-count">0</span></p>
+            <button id="try-again">Try Again</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" id="coupon-container">
+            <p><span id="coupon">Great! Generate a coupon by clicking the 4th image</span></p>
+            
+        </div>
+
+    </div>
+    <img id="congrats" src="./congratulations.jpg" alt="">
     <script src="./script.js"></script>
 </body>
 

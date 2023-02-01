@@ -8,6 +8,11 @@
     margin: 0 auto;
 }
 
+.img-fluid {
+    width: 120px;
+    height: auto;
+}
+
 .row {
     display: flex;
     gap: 5px;
@@ -15,12 +20,22 @@
 
 form {
     width: 100%;
+    display: flex;
 }
 
 input {
     width: 100%;
     margin: 5px;
 }
+
+.form-message {
+    text-align: center;
+    border: 1px solid green;
+    background: lightblue;
+    margin: 10px;
+    display: none;
+}
+
 img {
     border: 1px solid grey;
     cursor: pointer;
@@ -31,4 +46,29 @@ img:active {
 
 #form {
     display: none;
+}
+
+.dice {
+    display: none;
+}
+
+#dice {
+    object-fit: cover;
+}
+
+#try-again {
+    display: none;
+    height: fit-content;
+}
+
+#coupon-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#congrats {
+    display: none;
+    width: 105px;
+    margin: 0 auto;
 }
